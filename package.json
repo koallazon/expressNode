@@ -1,0 +1,23 @@
+{
+  "name": "expressnode",
+  "version": "1.0.0",
+  "description": "express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koallazon/expressNode.git"
+  },
+  "author": "ltg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koallazon/expressNode/issues"
+  },
+  "homepage": "https://github.com/koallazon/expressNode#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0"
+  }
+}
