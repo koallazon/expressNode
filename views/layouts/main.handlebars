@@ -11,6 +11,13 @@
         <header>
             <img src="/img/memo.png" alt="memo image" />
         </header>
+        {{#if flash}}
+            <div class="alert alert-dismissible alert={{flash.type}}">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>{{flash.intro}}</strong> {{{flash.message}}}
+            </div>
+        {{/if}}
+
         {{{ body }}}
 
         {{#if showTests}}
@@ -25,7 +32,7 @@
             {{#if pageTestScript}}
                 <script src="{{pageTestScript}}"></script>
             {{/if}}
+            <script>mocha.run();</script>
         {{/if}}
-        <script>mocha.run();</script>
     </body>
 </html>
